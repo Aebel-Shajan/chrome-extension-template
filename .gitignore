@@ -23,7 +23,10 @@ dist-ssr
 *.sln
 *.sw?
 
-# Ignore build file but don't ignore the manifest
-build  # Ignore all contents in the folder
-
-
+# Ignore all contents in the folder
+build/*    
+# Do not ignore the folder itself
+!build/    
+# Do not ignore the manifest or assets
+!build/manifest.json  
+!build/assets

@@ -1,0 +1,36 @@
+{
+    "manifest_version": 3,
+    "name": "Chrome Extension Template",
+    "version": "1.0",
+    "description": "A template for creating Chrome extensions.",
+    "permissions": [
+        "activeTab"
+    ],
+    "options_page": "options/options.html",
+    "action": {
+        "default_popup": "popup/popup.html"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                ""
+            ],
+            "js": [
+                "content/content.js"
+            ],
+            "css": [
+                "content/content.css"
+            ]
+        }
+    ],
+    "web_accessible_resources": [
+        {
+            "resources": [
+                "assets/react.svg"
+            ],
+            "matches": [
+                "<all_urls>"
+            ]
+        }
+    ]
+}
