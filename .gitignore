@@ -30,3 +30,6 @@ build/*
 # Do not ignore the manifest or assets
 !build/manifest.json  
 !build/assets
+
+# Ignore all tsbuildinfo files
+*.tsbuildinfo
