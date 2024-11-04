@@ -5,11 +5,12 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "npm run build-content && npm run build-popup && npm run build-options",
+    "build": "npm run build-content && npm run build-popup && npm run build-options && npm run build-side-panel",
     "lint": "eslint .",
     "preview": "vite preview",
     "build-content": "tsc -b && vite build --config .config/content.config.ts",
     "build-popup": "tsc -b && vite build --config .config/popup.config.ts",
+    "build-side-panel": "tsc -b && vite build --config .config/sidePanel.config.ts",
     "build-options": "tsc -b && vite build --config .config/options.config.ts"
   },
   "dependencies": {

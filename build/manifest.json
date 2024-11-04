@@ -4,16 +4,20 @@
     "version": "1.0",
     "description": "A template for creating Chrome extensions.",
     "permissions": [
-        "activeTab"
+        "activeTab",
+        "sidePanel"
     ],
     "options_page": "options/options.html",
     "action": {
         "default_popup": "popup/popup.html"
     },
+    "side_panel": {
+		"default_path": "sidePanel/sidePanel.html"
+	},
     "content_scripts": [
         {
             "matches": [
-                ""
+                "<all_urls>"
             ],
             "js": [
                 "content/content.js"
